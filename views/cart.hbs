@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://unpkg.com/ionicons@4.5.10-0/dist/cdd/ionicons.min.css">
+    </link>
+    <link rel="stylesheet" href="/style.css">
+</head>
+
+<body>
+    <div id="head">
+        <h1 class="center heading">
+            YumDelights
+        </h1>
+        <ul>
+            {{!-- <li><a href="">Login</a></li>
+            <li><a href="">SignUp</a></li> --}}
+        </ul>
+
+        <div class="home">
+            <a href="/">Home</a>
+        </div>
+
+        <div class="ml-auto navbar-nav"><a href="/cart" data-rb-event-key="/cart" class="nav-link1">
+                <ion-icon name="basket"></ion-icon> Cart[<span>0</span>]
+            </a>
+
+        </div>
+
+    </div>
+
+    <div class="product-container">
+        <div class="product-header">
+            <h5 class="product-title">PRODUCT</h5>
+            <h5 class="price">PRICE</h5>
+            <h5 class="quantity">QUANTITY</h5>
+
+            <h5 class="total">TOTAL</h5>
+
+        </div>
+        <div class="product">
+            {{!-- <span>
+                <ion-icon name="caret-back-circle-outline"></ion-icon>
+            </span> --}}
+
+        </div>
+        {{!-- <div class="cart-product-quantity" width="120px">
+            <div class="input-group-quantity">
+                <div class="input-group-prepend decrement-btn" style="cursor:pointer">
+                    <span class="input-group-text">-</span>
+                </div>
+                <input type="text" name="" id="" class="qty-input form-control" maxlenth="2" max="10" value="{{cartItem.incart}}">
+                <div class="input-group-append increment-btn" style="cursor:pointer"></div>
+                <span class="input-group-text">+</span>
+            </div> --}}
+
+        </div>
+
+
+    </div>
+    <div id="paypal-payment-button">
+
+    </div>
+
+    </div>
+
+
+    <script src="/main.js"></script>
+
+
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+
+    <script 
+        src="https://www.paypal.com/sdk/js?client-id=AfjqfS7W2PG5Okk6sCX0s5CrZF8IOXI4OiuwlnS76z6mTQhllY-kKrUJ5zrDg3jT3F6JadgJOiUm9J3t"></script>
+    {{!--
+    <script
+        src="https://www.paypal.com/sdk/js?client-id=AeuNCtSf99ZtjNk6JRs8CU0fnpqAxmAjQt-smrdH3zNHmo1ZYVF5qbgiH1RzLs1gtXjOfWk7L8LszaNu"></script>
+    --}}
+    {{!--
+    <script
+        src="https://www.paypal.com/sdk/js?client-id=ARuMekwWtcLtteQ2xyR4uPnZanrz1d3g24feEC9UC4ddwNxdENDFdwanAY5BkXybSTSC4Z5OoCV7Lree&disable-funding=creditcard"></script>
+    --}}
+    
+    {{!-- <script>paypal.Buttons().render('#paypal-payment-button');</script>  --}}
+    <script src="../abc.js"></script>
+
+
+
+</body>
+
+</html>
